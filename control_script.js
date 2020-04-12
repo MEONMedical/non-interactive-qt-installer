@@ -34,7 +34,7 @@ Controller.prototype.WelcomePageCallback = function() {
 /// remembered from previous installs, or skip sign in otherwise.
 Controller.prototype.CredentialsPageCallback = function() {
     logCurrentPage()
-    proceed()
+    gui.clickButton(buttons.NextButton, 2000);
 }
 
 /// Skip introduction page
