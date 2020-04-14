@@ -1,11 +1,9 @@
-﻿$dir=Get-Location
+﻿#/usr/bin/pwsh
+
+$dir=Get-Location
 
 $qtInstallerRootUrl="http://download.qt.io/official_releases/online_installers"
 $qtInstallerScriptFile="$dir\control_script.js"
-
-$env:QT_INSTALLER_VARS=".\ci\vars_linux.js"
-#$env:QT_INSTALLER_DOWNLOAD_NAME="qt-unified-linux-x64-online.run"
-$env:QT_INSTALLER_DOWNLOAD_NAME="qt-unified-windows-x86-online.exe"
 
 function injectVars()
 {
