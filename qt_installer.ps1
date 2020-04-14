@@ -1,6 +1,4 @@
-﻿#/usr/bin/pwsh
-
-$dir=Get-Location
+﻿$dir=Get-Location
 
 $qtInstallerRootUrl="http://download.qt.io/official_releases/online_installers"
 $qtInstallerScriptFile="$dir\control_script.js"
