@@ -52,7 +52,7 @@ function installOnLinux()
  
     $command = "chmod o+x ""$dir\$env:QT_INSTALLER_DOWNLOAD_NAME"""
     Invoke-Expression $command
-    $command = "sudo ""${DIR}/${QT_INSTALLER_DOWNLOAD_NAME}"" --verbose --script ""$qtInstallerScriptFile"""
+    $command = "sudo ""$dir\$env:QT_INSTALLER_DOWNLOAD_NAME"" --verbose --script ""$qtInstallerScriptFile"""
     Invoke-Expression $command
 }
 
@@ -64,7 +64,7 @@ function installOnWindows()
 
 function installQt()
 {
-    installOnWindows
+    installOnLinux
 }
 
 injectVars
